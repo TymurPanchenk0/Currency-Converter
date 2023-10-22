@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<VBox alignment="BASELINE_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.currencyConverter.view.ExchangeView">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label fx:id="amountName" text="Amount"/>
+    <TextField fx:id="amount"/>
+    <Label fx:id="fromName" text="From"/>
+    <ComboBox fx:id="from" prefWidth="200" promptText="Your From currency"/>
+    <Label fx:id="toName" text="To"/>
+    <ComboBox fx:id="to" prefWidth="200" promptText="Your To currency"/>
+    <Label fx:id="result" text="Result:"/>
+    <Label fx:id="resultText"/>
+    <Button onMouseClicked="#exchangeClick" fx:id="submit" text="Change"/>
+</VBox>
